@@ -29,3 +29,12 @@ CREATE TABLE entries (
     type ENUM('text', 'image') NOT NULL,
     data TEXT
 );
+CREATE DATABASE spinner_db;
+
+USE spinner_db;
+
+CREATE TABLE entries (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
