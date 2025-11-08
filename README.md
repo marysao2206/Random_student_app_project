@@ -1,27 +1,3 @@
-# Rendom-Student-App — API version
-
-This small project now includes a minimal Flask-based API in `app.py`.
-
-Quick start (Windows PowerShell):
-
-```powershell
-python -m pip install -r requirements.txt
-python app.py
-```
-
-Endpoints:
-- `GET /api/status` — simple health check JSON
-- `GET /api/templates` — returns JSON list of templates in `Templates/`
-- `GET /api/template/<name>` — returns rendered HTML in JSON, or raw HTML if `?html=true`
-
-The root path `/` still renders `Templates/index.html` so the existing frontend can work.
-
-Notes:
-- Static files are served from the existing `Satic/` directory at `/api/static/<filename>`.
-- For production use, run with a WSGI server (gunicorn/uvicorn) and behind a reverse proxy.
-
-
-
 # 🎡 Ultimate Random Spinner Wheel (Flask + MySQL)
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square&logo=python)](https://www.python.org/)
@@ -48,7 +24,15 @@ Allows users to add text and image entries, spin a dynamic wheel, and save entri
 ---
 
 ## 📂 Project Structure
-
+project-root/
+├─ Satic/ # Static files (CSS, JS, images)
+├─ Templates/ # HTML templates
+│ ├─ index.html
+│ ├─ group.html
+│ └─ images.html
+├─ app.py # Main Flask app
+├─ requirements.txt # Python dependencies
+└─ README.md
 
 # Random Student App - Random Spinning Wheel
 
@@ -84,6 +68,9 @@ A web-based interactive **Random Spinning Wheel** application built with **HTML,
   - HTML5
   - CSS3 (custom styles + Tailwind CSS)
   - JavaScript (ES6+)
+- **backend**
+  - Database & MySQL
+  - Phyton
 - **Fonts**
   - Inter (Google Fonts)
 - **Storage**
@@ -143,6 +130,7 @@ A **web app** to quickly generate random groups from a list of members. Ideal fo
 
 - HTML5 & CSS3  
 - JavaScript (ES6)  
+- Database & MySQL 
 - TailwindCSS  
 - LocalStorage  
 
@@ -158,10 +146,6 @@ A **web app** to quickly generate random groups from a list of members. Ideal fo
 
 ---
 
-## 📄 License
-
-MIT License © 2025  
-Feel free to use, modify, and distribute! 💡
 
 # 🎡 Ultimate Random Spinner Wheel
 
@@ -205,6 +189,7 @@ A **fully interactive spinner wheel web app** to randomly pick a winner or optio
 
 - **HTML5 & CSS3**
 - **JavaScript (ES6)**
+- **Database $ MySQL**
 - **TailwindCSS** (for modern styling)
 - **Phosphor Icons** (for UI icons)
 - **LocalStorage** (for saving entries persistently)
@@ -237,7 +222,7 @@ A **fully interactive spinner wheel web app** to randomly pick a winner or optio
 
 ---
 
-## 📄 License
+## 🩵 Author
 
-MIT License © 2025  
-Feel free to use, modify, and distribute! 💡
+Sao Mary  
+📚 Foundation by first Year Student @ Passerelles numeriques Cambodia💡 

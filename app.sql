@@ -1,38 +1,37 @@
+-- Database for basic spinner entries
 CREATE DATABASE random_wheel_db;
-
 USE random_wheel_db;
-
 CREATE TABLE entries (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL
 );
+
+-- Database for groups and members
 CREATE DATABASE groupdb;
-
 USE groupdb;
-
 CREATE TABLE members (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
 CREATE TABLE groups (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  group_name VARCHAR(50),
-  members TEXT
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    group_name VARCHAR(50),
+    members TEXT
 );
+
+-- Database for advanced spinner with text/image entries
 CREATE DATABASE IF NOT EXISTS random_spinner_db;
-
 USE random_spinner_db;
-
 CREATE TABLE entries (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     type ENUM('text', 'image') NOT NULL,
     data TEXT
 );
+
+-- Simple spinner database with timestamps
 CREATE DATABASE spinner_db;
-
 USE spinner_db;
-
 CREATE TABLE entries (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
