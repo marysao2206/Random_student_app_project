@@ -180,9 +180,9 @@ A **fully interactive spinner wheel web app** to randomly pick a winner or optio
 
 ## 📸 Screenshots
 
-![Wheel Panel](https://placehold.co/600x400?text=Wheel+Panel)
-![Entries Panel](https://placehold.co/600x400?text=Entries+Panel)
-![Winner Announcement](https://placehold.co/600x400?text=Winner+Announcement)
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 ---
 
