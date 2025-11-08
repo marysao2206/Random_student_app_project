@@ -24,6 +24,7 @@ Allows users to add text and image entries, spin a dynamic wheel, and save entri
 ---
 
 ## 📂 Project Structure
+```
 project-root/
 ├─ Satic/ # Static files (CSS, JS, images)
 ├─ Templates/ # HTML templates
@@ -33,7 +34,7 @@ project-root/
 ├─ app.py # Main Flask app
 ├─ requirements.txt # Python dependencies
 └─ README.md
-
+```
 # Random Student App - Random Spinning Wheel
 
 A web-based interactive **Random Spinning Wheel** application built with **HTML, CSS, JavaScript**, and **Tailwind CSS**, designed to randomly pick winners or group members. Entries are stored in **localStorage**, so they persist across page reloads.
